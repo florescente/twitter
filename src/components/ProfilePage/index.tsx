@@ -6,7 +6,10 @@ import {
   LocationIcon,
   CakeIcon,
   Followage,
+  EditButton,
 } from './styles'
+
+import Feed from '../Feed/index'
 
 function ProfilePage() {
   return (
@@ -16,7 +19,7 @@ function ProfilePage() {
       </Banner>
 
       <ProfileData>
-        {/* <EditButton outlined>Editar perfil</EditButton> */}
+        <EditButton outlined>Editar perfil</EditButton>
         <h1>Guilherme Rodz</h1>
         <h2>@guilherme_rodz</h2>
         <p>
@@ -41,6 +44,8 @@ function ProfilePage() {
           </span>
         </Followage>
       </ProfileData>
+
+      <Feed />
     </Container>
   )
 }
