@@ -9,6 +9,7 @@ import {
   BellIcon,
   EmailIcon,
 } from './styles'
+import ProfilePage from '../ProfilePage'
 
 function Main() {
   return (
@@ -23,7 +24,7 @@ function Main() {
         </ProfileInfo>
       </Header>
 
-      {/* <ProfilePage /> */}
+      <ProfilePage />
 
       <BottomMenu>
         <HomeIcon className="active" />
