@@ -8,6 +8,8 @@ function Feed() {
 
       <Tweets>
         <Tweet />
+        <Tweet />
+        <Tweet />
       </Tweets>
     </Container>
   )
