@@ -1,13 +1,15 @@
 import Main from '../Main'
 import { Container, Wrapper } from './styles'
+import MenuBar from '../MenuBar'
+import SideBar from '../SideBar'
 
 function Layout() {
   return (
     <Container>
       <Wrapper>
-        {/* <MenuBar /> */}
+        <MenuBar />
         <Main />
-        {/* <SideBar /> */}
+        <SideBar />
       </Wrapper>
     </Container>
   )
