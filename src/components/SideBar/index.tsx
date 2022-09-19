@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-key */
+import StickyBox from 'react-sticky-box'
 import List from '../List'
+import News from '../News'
 import {
   Container,
   SearchWrapper,
@@ -17,17 +19,33 @@ function SideBar() {
         <SearchIcon />
       </SearchWrapper>
 
-      <Body>
-        <List
-          title="Talvez você curta"
-          elements={[
-            <FollowSuggestion name="Luiz Bo" nickname="@luizbatana" />,
-            <FollowSuggestion name="Luke Morais" nickname="@lukemorais" />,
-            <FollowSuggestion name="Samantha Alta" nickname="@samanthaalta" />,
-          ]}
-        />
-        <List title="Talvez você curta" elements={['asdfsdf', 'asdsdf']} />
-      </Body>
+      <StickyBox>
+        <Body>
+          <List
+            title="Talvez você curta"
+            elements={[
+              <FollowSuggestion name="Luiz Bo" nickname="@luizbatana" />,
+              <FollowSuggestion name="Luke Morais" nickname="@lukemorais" />,
+              <FollowSuggestion
+                name="Samantha Alta"
+                nickname="@samanthaalta"
+              />,
+            ]}
+          />
+          <List
+            title="Talvez você curta"
+            elements={[<News />, <News />, <News />]}
+          />
+          <List
+            title="Talvez você curta"
+            elements={[<News />, <News />, <News />]}
+          />
+          <List
+            title="Talvez você curta"
+            elements={[<News />, <News />, <News />]}
+          />
+        </Body>
+      </StickyBox>
     </Container>
   )
 }

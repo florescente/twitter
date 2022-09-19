@@ -28,4 +28,10 @@ export const Tweets = styled.div`
   flex-direction: column;
 
   flex-shrink: 0;
+
+  @media (max-width: 500px) {
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
 `
